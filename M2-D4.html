@@ -22,10 +22,12 @@
   - input enter groups
  -  button to split
   - LI to show the created groups
-  collect names to a list
-  divide from the list of names
+   collect names to a list 
+  divide from the list of names and  then make an other list
 
-  
+    PROBLEMS, 
+    how it knows how many titles of " groups " it gonna need . -- can i do this with a loop in JS ?
+
      -->
     <title>Team generator</title>
     <!-- Required meta tags -->
@@ -87,7 +89,7 @@
     const funcUserInput = function(event){
     let userName = document.getElementById("classNames").value
     let userNumber = document.getElementById("numberOfGroups").value
-    console.log((userName.split(",")) / userNumber )
+    console.log((userName.split(",").length) / userNumber )
 
   }
   
