@@ -46,15 +46,22 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <style>
+      #submit{
+        background-color: black;
+        color: blanchedalmond;
+
+      }
+    </style>
   </head>
   <body>
     <h1>Team generator</h1>
     <div class="userInputContainer">
       <input type="text" name="names" id="classNames" placeholder="Put here the class names">
       <input type="number" name="groups" id="numberOfGroups" placeholder="Groups">
-      <input type="submit" value="Split" onclick="funcUserInput()">
+      <input type="submit" value="Split" id="submit" onclick="funcUserInput()">
       <h3>Instructions</h3>
-      <p>Insert names and separate them by " , " , insert the number of groups you want and then push "submit" </p>
+      <p>Insert names and separate them by " , " , insert the number of groups you want and then push "submit"button. </p>
     </div>
 
     <div class="listOfGroupsContainer">
