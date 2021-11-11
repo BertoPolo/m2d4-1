@@ -17,6 +17,18 @@
 <html lang="en">
   <head>
 
+    <!--
+  - input to enter names
+  - input enter groups
+ -  button to split
+  -  LI to show the created groups
+  JS
+
+    PROBLEMS, 
+    how it knows how many titles of " groups " it gonna need . -- can i do this with a loop in JS ?
+
+     -->
+    <title>Team generator</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -36,8 +48,23 @@
     />
   </head>
   <body>
+    <h1>Team generator</h1>
+    <div class="userInputContainer">
+      <input type="text" name="names" id="classNames" placeholder="Put here the class names">
+      <input type="number" name="groups" id="numberOfGroups" placeholder="Groups">
+      <input type="submit" value="Split" onclick="funcUserInput()">
+      <h3>Instructions</h3>
+      <p>Insert names and separate them by " , " , insert the number of groups you want and then push "submit" </p>
+    </div>
 
-    <a href="" class="btn btn-danger">boton</a>
+    <div class="listOfGroupsContainer">
+      <ol>
+        <li>
+
+        </li>
+      </ol>
+    </div>
+    
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -48,5 +75,24 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+<script>
+// creating function to  use the user input
+
+// .lenght on id"classNames" to take a numer to split
+// use number of id "numberOfGroups" to make a division with the .lenght before..
+// 
+
+  const funcUserInput = function(event){
+    let userName = document.getElementById("classNames").value
+    let userNumber = document.getElementById("numberOfGroups").value
+    console.log(userName.split(",") / userNumber)
+
+  }
+  
+
+  
+
+</script>
+
   </body>
 </html>
